@@ -42,10 +42,11 @@ This manual is tested under Ubuntu 14.04!
 ```
 * Send a POST request to "localhost:5000/extraction" with a body containing JSON.
   For example: 
-  
+ 
 ```shell
-  { "text" : "The paaring season is normally between May to August."}
+curl -XPOST -d '{ "text" : "The paaring season is normally between May to August."}' -H 'Content-Type: application/json' localhost:5000/extraction
 ```
+
   Result:
   
   ```shell
